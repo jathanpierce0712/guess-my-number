@@ -12,13 +12,21 @@ if (x<1 || x>20){
 
 }else if(x == randomNumber){
     text = "Wow congratulations!!!! you guessed right"
+
     document.getElementById("response").innerHTML = text;
+
     document.getElementById("yourGuess").innerHTML = "Your choice "+ x;
+
     gameScore = gameScore + 5;
+    
     document.getElementById("score").innerHTML = "Your Score: " + gameScore
+
     numCorrect = numCorrect + 1;
+
     document.getElementById("correct").innerHTML = "How many you have gotten correct: " + numCorrect
+
     randomNumber = Math.floor(Math.random() * 20 + 1);
+
     console.log(randomNumber)
 
 }else{
@@ -51,5 +59,7 @@ function reset(){
 
 }
 document.getElementById("correct").innerHTML = "Times you've guessed correctly: " + numCorrect
+
 document.getElementById("score").innerHTML = "Your Score: " + gameScore
+
 document.getElementById("highScore").innerHTML = "Your high score: " + highScore
